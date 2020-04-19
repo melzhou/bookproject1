@@ -1,0 +1,154 @@
+{%load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'bookapp/style.css' %}">
+    <!-- OrpheusW05 -->
+    <link href="//db.onlinewebfonts.com/c/8bf03e662b63d69e50bb114b6bd9a60b?family=OrpheusW05-Regular" rel="stylesheet" type="text/css"/>
+    <!-- Orpheus Bold -->
+    <link href="//db.onlinewebfonts.com/c/81651a191b7129993b0871c834a19600?family=Orpheus+Pro" rel="stylesheet" type="text/css"/>
+    <!-- Animation -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
+    <!-- Scroll magic-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+        <title>document</title>
+
+    </head>
+    <body>
+        
+       
+            <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark" [containerInside]="true">
+              <mdb-navbar-brand>
+                <a class="logo navbar-brand" href="#">
+                  <strong>Navbar</strong>
+                </a>
+              </mdb-navbar-brand>
+              <links>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active waves-light">
+                    <a class="nav-link">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link">Link</a>
+                  </li>
+                  <li class="nav-item waves-light" mdbWavesEffect>
+                    <a class="nav-link">Profile</a>
+                  </li>
+                </ul>
+              </links>
+            </mdb-navbar>
+            <!-- Main -->
+            <div class="view">
+              <div class="full-bg-img">
+                <div class="mask rgba-indigo-slight flex-center">
+                  <div class="container">
+                    <div class="white-text text-center wow fadeInUp">
+                      <h2>This Navbar isn't fixed</h2>
+                      <h5>When you scroll down it will disappear</h5>
+                      <br>
+                      <p>Full page intro with background image will be always displayed in full screen mode, regardless of device </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /.Main -->
+    
+          <!--Main Navigation-->
+        
+          <!--Main Layout-->
+          <main class="text-center py-5 mt-3">
+        
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+        
+                  <p align="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        
+                </div>
+              </div>
+            </div>
+        
+          </main>
+          <!--Main Layout-->
+    
+        
+
+        
+    <!--
+<script src="https://code.jquery.com/jqery.3.2.1js"></script>
+        <script type="text/javascript">
+            
+           $(document).ready(function(){
+               $(window).scroll(function(){
+                
+
+                   if($(this).scrollTop() > 10){
+                       $(".topbar").css({"opacity":"0"})
+                   }
+                   else {
+                       $(".topbar").css({"opacity":"1"})
+                   }
+               })
+           })
+        
+        </script>
+        <div class="topbar">
+            <nav class="navbar navbar-expand-lg navbar-light  scrolling-navbar">
+                <div class="container">
+                    <div class="col-md-2 col-sm-2 justify-content-center"> 
+                        <a class="navbar-brand" href=""><img src="https://i.ibb.co/7tNJnsC/Logo.png" class="img-fluid width:40%; height:auto;"alt="Responsive image" border="0"></a>
+                    </div>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent-7"> -
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Book Shelf <span class="sr-only">(current)</span></a>
+              
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Article</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="aboutme/">About</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+              </nav>
+          </div>
+    -->    
+        
+        <div class="container" style="height: 2600px;"></div>
+
+    </body>
+</html>

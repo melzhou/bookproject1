@@ -1,0 +1,98 @@
+@import url(//db.onlinewebfonts.com/c/8bf03e662b63d69e50bb114b6bd9a60b?family=OrpheusW05-Regular);
+
+.card-title{
+    font-size: 1.85rem;
+    font-weight: 200;
+    font-family: "OrpheusW05-Regular";src: url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.eot"); src: url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.woff") format("woff"), url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.svg#OrpheusW05-Regular") format("svg"); }
+    font-stretch: wider;
+    
+}
+
+.card-subtitle{
+    font-weight: lighter!important;
+    font-size: smaller;
+}
+.card-text{
+    font-size: 17px !important;
+    font-weight: 200 !important;
+    color:black !important ;
+}
+
+.nav-item{
+    font-size: 1.45rem;
+    font-family: "OrpheusW05-Regular";
+}
+
+h1 {
+    font-family: "OrpheusW05-Regular";
+    line-height: 135%;
+    color: rgb(203,108,230);
+}
+
+h5 {
+    font-weight: lighter;
+}
+
+h6 {
+    font-family: Roboto, sans-serif
+}
+
+
+
+u{
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    display: inline-block;
+    line-height: 1.75;
+}
+
+
+html,
+body,
+{
+    height: 100%;
+  }
+
+
+
+
+
+.view {
+    background: url("https://images.unsplash.com/photo-1566370424256-a76a2ae99b27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80.jpg")no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -160px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+.navbar {
+    background-color: transparent;
+    border:none;
+    box-shadow: none!important;
+}
+.top-nav-collapse {
+    background-color: seagreen;
+}
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color:;
+    }
+
+
+
+.full-bg-img {
+    background: url("https://images.unsplash.com/photo-1566370424256-a76a2ae99b27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80.jpg")no-repeat center center;
+    background-size: cover;
+    height: 50%;
+        
+ }
+
+<!-- color: rgb(203,108,230); -->
+

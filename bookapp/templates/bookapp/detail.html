@@ -1,0 +1,111 @@
+{% load static %}
+<script src="animation.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'bookapp/style.css' %}">
+    <!-- OrpheusW05 -->
+    <link href="//db.onlinewebfonts.com/c/8bf03e662b63d69e50bb114b6bd9a60b?family=OrpheusW05-Regular" rel="stylesheet" type="text/css"/>
+    <!-- Orpheus Bold -->
+    <link href="//db.onlinewebfonts.com/c/81651a191b7129993b0871c834a19600?family=Orpheus+Pro" rel="stylesheet" type="text/css"/>
+    <!-- Animation -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <!-- Bootstrap core CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/css/mdb.min.css" rel="stylesheet">
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.15.0/js/mdb.min.js"></script>
+    <!-- Scroll magic-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <title>Document</title>
+</head>
+
+
+
+<body>
+        <!-- Test Nav -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <div class="d-flex justify-content-around align-items-center">
+                    <div class="col-md-2 col-sm-4 ml-4"> 
+                        <a class="mdb-navbar-brand" href=""><img src="https://i.ibb.co/7tNJnsC/Logo.png" class="img-fluid width:40%; height:author;"alt="" border="0"></a>
+                    </div>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="true" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                    <div class="col-md-8">
+                        <ul class="navbar-nav align-items-center ml-4">
+                            <li class="nav-item m-2">
+                              <a class="nav-link" href="../bookshelf"><u>Book Shelf</u> <span class="sr-only"></span></a>
+          
+                            </li>
+                            <li class="nav-item m-2">
+                              <a class="nav-link" href="../article">Article</a>
+                            </li>
+                            <li class="nav-item m-2">
+                              <a class="nav-link" href="../">About</a>
+                            </li>
+                          </ul>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+              
+            </div>
+                
+        </nav>
+
+
+<main>
+    <div class="container">
+        <div class="d-flex mt-4 mb-2 justify-content-center">
+            <div class="col-md-3">
+                <div class="d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <img src="{{ book_objects.image }}" class="img-fluid" alt="Responsive image" >
+                    </div> 
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="mt-2">
+                    <div class="col-md-12" >
+                        <h1 class="text-reset"> 
+                            {{ book_objects.name }}
+                        </h1>
+                    </div> 
+                </div>
+                <div class="mt-2">
+                    <div class="col-md-12 text-secondary">
+                    By {{ book_objects.author }}
+                    </div> 
+                </div>
+                <div class="mt-4">
+                    <div class="col-md-12 text-justify">
+                    {{ book_objects.description }}
+                    </div> 
+                </div>
+            </div>
+
+        </div>
+</main>
+    
+
+</body>
+</html>
