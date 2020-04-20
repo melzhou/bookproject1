@@ -107,7 +107,7 @@
                         if ($("#textfield").val == '')
                             $("#textfield").hide();
                     });</script>
-                    <p class="card-text text-justify" style="margin-bottom: 100px;">{{ writing.content }}</small></p>
+                    <p class="card-text text-justify" style="margin-bottom: 100px;">{{ writing.content|linebreaksbr }}</small></p>
                 
                 {% endfor %}
             </div>

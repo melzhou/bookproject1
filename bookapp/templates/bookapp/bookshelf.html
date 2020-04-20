@@ -123,8 +123,8 @@
                       <div class="col-md-9 ml-2">
                         <div class="card-body">
                           <a href="/{{book.id}}" class="card-title card-link text-dark mt-0">{{ book.name }}</a>
-                          <p class="card-subtitle  mb-3 text-muted"> By {{ book.author }}</p>
-                          <p class="card-text text-justify">{{ book.description }}</small></p>
+                          <p class="card-subtitle  mb-3 text-muted" style="font-weight: 200;"> By {{ book.author }}</p>
+                          <p class="card-text text-justify" >{{ book.description|linebreaksbr }}</small></p>
                         </div>
                       </div>
                       
