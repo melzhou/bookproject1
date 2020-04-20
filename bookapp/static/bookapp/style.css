@@ -1,5 +1,11 @@
-
-
+@font-face {
+    font-family: "OrpheusW05-Regular"; src: 
+    url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.eot"); src: 
+    url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/8bf03e662b63d69e50bb114b6bd9a60b.svg#OrpheusW05-Regular") format("svg"); }
 
 .card-title{
     font-size: 1.85rem;
