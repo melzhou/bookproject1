@@ -1,5 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/8bf03e662b63d69e50bb114b6bd9a60b?family=OrpheusW05-Regular);
 
+background-color:red;
+
 .card-title{
     font-size: 1.85rem;
     font-weight: 200;
@@ -50,7 +52,7 @@ u{
 html,
 body,
 {
-    height: 100%;
+    height: 100%;;
   }
 
 
