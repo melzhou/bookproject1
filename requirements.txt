@@ -64,3 +64,5 @@ virtualenv==16.7.8
 wcwidth==0.1.9
 websocket-client==0.57.0
 whitenoise==5.0.1
+gunicorn==20.0.4
+django-heroku
