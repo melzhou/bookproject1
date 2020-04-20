@@ -23,5 +23,6 @@ urlpatterns = [
     path('<int:id>/', views.detail, name="detail"),
     path('nav/', views.nav, name="nav"),
     path('about/', views.about, name="about"),
-    path('article/', views.article, name="article")
+    path('article/', views.article, name="article"),
+    path('', views.index, name="index")
 ]

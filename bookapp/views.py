@@ -21,3 +21,6 @@ def about(request):
 def article(request):  #model name and view name shouldn't be the same
     writing_objects = writing.objects.all()
     return render(request, 'bookapp/article.html',{'writing_objects':writing_objects})
+
+def index(request):
+    return render(request, 'bookapp/index.html')

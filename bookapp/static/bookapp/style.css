@@ -85,7 +85,9 @@ body,
         background-color:;
     }
 
-
+.parallax-curtain{
+    background:none;
+}
 
 .full-bg-img {
     background: url("https://images.unsplash.com/photo-1566370424256-a76a2ae99b27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80.jpg")no-repeat center center;
