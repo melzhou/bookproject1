@@ -94,17 +94,14 @@
     
     <div class="container" >
         <div class="row d-flex justify-content-center">
-            <div class=" col-md-8">
+            <div class="col-md-8">
                 {% for writing in writing_objects %}
                     <h1 class="text-reset" style="margin-top: 40px;">{{ writing.name }}</h1>
                     <blockquote class="blockquote m-4">
                         <p class="mb-0">{{ writing.quote }}</p>
                         <footer class="blockquote-footer">{{ writing.quotefrom }} <cite title="Source Title">{{ writing.source }}</cite></footer>
                     </blockquote> 
-                    <script>
-                    $('div.section:empty').hide();
-                    </script>
-                    <p class="card-text text-justify" style="margin-bottom: 100px;">{{ writing.content|linebreaksbr }}</small></p>
+                    <p class="text-justify" style="font-size:1.1em; margin-bottom: 100px;">{{ writing.content|linebreaksbr }}</p>
                 
                 {% endfor %}
             </div>
