@@ -48,18 +48,33 @@
 <body>
 
     <!-- Nav -->
-    <div id="navbar">
-        <ul class="nav justify-content-center">
-            <div class="d-flex m-3 justify-content-center">
-                
-                    <a class="navbar-brand" href="../">
-                        <img src="https://i.ibb.co/7tNJnsC/Logo.png" height="70" width="auto" alt="Responsive image" border="0">
-                    </a>
-               
-
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="d-flex justify-content-around align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand ml-4" href="../"><img src="https://i.ibb.co/7tNJnsC/Logo.png" height="60" width="auto" alt="" border="0"></a>
+        
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03"> 
+                    
+                        <ul class="navbar-nav align-items-center ml-4">
+                            <li class="nav-item m-2">
+                            <a class="nav-link" href="../bookshelf/">Book Shelf </a>
+        
+                            </li>
+                            <li class="nav-item m-2">
+                            <a class="nav-link" href="../article/">Article</a>
+                            </li>
+                            <li class="nav-item m-2">
+                            <a class="nav-link" href=""><u>About</u><span class="sr-only"></a>
+                            </li>
+                        </ul>
+                   
+                </div>
             </div>
-        </ul>
-    </div>
+        </div> 
+    </nav>
 
     <!--my picture-->
     <div class="container">
@@ -68,112 +83,31 @@
                 <img src="https://i.ibb.co/LYmjQjk/IMG-4526-meitu-1.jpg" class="img-fluid width:60%; height:auto;"> 
             </div>
         </div>
-        <div class="d-flex mt-4 p-2 justify-content-center">
-            <div class="col-md-12">
-                <p class="text-center">
-                    <h1 align="center" class="text-reset">
-                        Hey y'all, this is Mel! I'm a 'protagonist', romanticizer, post-modernist, lawyer, with a heart to ease human sufferings and mental capacity shortage. I enjoy being both quiet and active. In my free time I like to be in sun-drenched places, in the water, or couches of my friends where they feed me heavenly good sweet food and wrap me with weighted blanket:)
-                    </h1>
-                </p> 
+        <div class="container" style="height: 100%; min-height: 500px;">
+       
+            <div class="d-flex mt-4 p-2 justify-content-center">
+                <div class="col-md-10">
+                    <p class="text-center">
+                        <h1 align="center" class="text-reset">
+                            Hey y'all, this is Mel! I'm a 'protagonist', romanticizer, post-modernist, lawyer(Berkeley Law 19'), with a heart to ease human sufferings and mental capacity shortage. I enjoy being both quiet and active. In my free time I like to be in sun-drenched places, in the water, or couches of my friends where we demolish a red velvet:)
+                        </h1>
+                    </p> 
+                </div>
             </div>
-        </div>
+         </div>
 
         
       
     </div>
    
-    <!--scroll into view-->
- 
-    <script>
-        // init controller
-        var controller = new ScrollMagic.Controller();
-    </script>
-
-    <style type="text/css">
-        #reveal1 {
-            opacity: 0;
-            -webkit-transform: scale(0.9);
-                -moz-transform: scale(0.9);
-                    -ms-transform: scale(0.9);
-                    -o-transform: scale(0.9);
-                            transform: scale(0.9);
-            -webkit-transition: all 1s ease-in-out;
-                -moz-transition: all 1s ease-in-out;
-                    -ms-transition: all 1s ease-in-out;
-                    -o-transition: all 1s ease-in-out;
-                            transition: all 1s ease-in-out;
-        }
-        #reveal1.visible {
-            opacity: 1;
-            -webkit-transform: none;
-                -moz-transform: none;
-                    -ms-transform: none;
-                    -o-transform: none;
-                            transform: none;
-        }
-    </style>
-
-        <div id="trigger1" class="container" style="height: 600px;">
-           
-            <div class="d-flex h-100 justify-content-around">
-                <div class="col-md-12 my-auto">
-                        
-                        <div class="d-flex justify-content-around">
-                            <!-- 3 cards -->
-                            <div  id="reveal1" class="row card-columns">
-                                <!-- card no1 -->
-                                <div class="col-md-4">
-                                    <div class="text-center">
-                                        <a class="nav-item nav-link" href="../bookshelf/"><h1 class="display-4"><u>Book Shelf</u></h1></a>
-                                    </div>
-                                    <div class="text-center m-4">
-                                        <h5> Books I enjoyed reading, quotes and reviews</h5>
-                                    </div>
-                                </div>
-                                <!-- card no2 -->
-                                <div class="col-md-4">
-                                    <div class="text-center">
-                                        <a class="nav-item nav-link" href="../article/"><h1 class="display-4"><u>Article</u></h1></a>
-                                    </div>
-                                    <div class="text-center m-4">
-                                        <h5>I write once in a while:)</h5>
-                                    </div>
-                                </div>
-                                <!-- card no3 -->
-                                <div class="col-md-4">
-                                    <div class="text-center"> 
-                                        <a class="nav-item nav-link" href="#"><h1 class="display-4"><u>Music</u></h1></a>
-                                    </div>
-                                    <div class="text-center m-4">
-                                        <h5> I find joy in putting hands on keyboard and singing.</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-             </div>   
-        </div>
-    
-    <script>
-            // build scene
-            new ScrollMagic.Scene({
-                                triggerElement: "#trigger1",
-                                triggerHook: 0.9, // show, when scrolled 10% into view
-                                duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
-                                offset: 50 // move trigger to center of element
-                            })
-                            .setClassToggle("#reveal1", "visible") // add class to reveal
-                            //.addIndicators() // add indicators (requires plugin)
-                            .addTo(controller);
-    </script>
-
+   
 
 
 <div class="container">
     <div class="d-flex m-4 justify-content-center">
         <div class="col-md-12">
             <p class="text-center">
-                I built this website with Python and Django, hosting in the Heroku server. Background images from Unsplash.
+                This website is with Python and Django, hosted on Heroku server. Static is stored on Amazon S3. Background images are from Unsplash. 
             </p> 
         </div>
     </div>

@@ -5,7 +5,8 @@ from django.db import models
 class book(models.Model):
     name = models.CharField(max_length = 100)
     author = models.CharField(max_length = 100)
-    description = models.TextField()
+    Excerpt = models.TextField(null=True, blank=True)
+    description = models.TextField(null=True, blank=True)
     image = models.CharField(max_length = 200)
 
 

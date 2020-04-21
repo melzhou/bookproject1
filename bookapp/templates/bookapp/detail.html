@@ -38,72 +38,81 @@
 
 
 <body>
-        <!-- Test Nav -->
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <div class="d-flex justify-content-around align-items-center">
-                    <div class="col-md-2 col-sm-4 ml-4"> 
-                        <a class="mdb-navbar-brand" href="../"><img src="https://i.ibb.co/7tNJnsC/Logo.png" class="img-fluid width:40%; height:author;"alt="" border="0"></a>
-                    </div>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="true" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-                    <div class="col-md-8">
-                        <ul class="navbar-nav align-items-center ml-4">
-                            <li class="nav-item m-2">
-                              <a class="nav-link" href="../bookshelf"><u>Book Shelf</u> <span class="sr-only"></span></a>
-          
-                            </li>
-                            <li class="nav-item m-2">
-                              <a class="nav-link" href="../article">Article</a>
-                            </li>
-                            <li class="nav-item m-2">
-                              <a class="nav-link" href="../">About</a>
-                            </li>
-                          </ul>
-                    </div>
-                    
-                    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <div class="d-flex justify-content-around align-items-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <a class="navbar-brand ml-4"href="../"><img src="https://i.ibb.co/7tNJnsC/Logo.png" height="60" width="auto" border ="0"></a>
+
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02"> 
+               
+                    <ul class="navbar-nav align-items-center ml-4">
+                        <li class="nav-item m-2">
+                          <a class="nav-link" href="../bookshelf/"><u>Book Shelf</u> <span class="sr-only"></span></a>
+      
+                        </li>
+                        <li class="nav-item m-2">
+                          <a class="nav-link" href="../article/">Article</a>
+                        </li>
+                        <li class="nav-item m-2">
+                          <a class="nav-link" href="../about/">About</a>
+                        </li>
+                      </ul>
                 </div>
-                
-              
             </div>
-                
-        </nav>
+        </div>  
+    </nav>
 
 
 <main>
     <div class="container">
-        <div class="d-flex mt-4 mb-2 justify-content-center">
-            <div class="col-md-3">
-                <div class="d-flex justify-content-center">
-                    <div class="col-md-12">
-                        <img src="{{ book_objects.image }}" class="img-fluid" alt="Responsive image" >
-                    </div> 
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-white">
+              <li class="breadcrumb-item"><a href="../bookshelf/" style="color: rgb(203,108,230;">Book Shelf</a></li>
+              <li class="breadcrumb-item active" aria-current="page">{{ book_objects.name }}</li>
+            </ol>
+          </nav>
+        
+        <div class="row">
+            <div class="container">
+            <div class="m-4">
+                <!-- card -->
+                <div class="card border-white m-3 p-3" style="max-width: 1000px;">
+                   
+                    <div class="row card-columns">
+                        <!--left side image-->
+                      <div class="col-md-3 col-sm-6">
+                          <div class="container p-2">
+                              <div class="text-center">
+                                <img src="{{ book_objects.image }}" class="img-fluid" style="max-width: 170;">
+                              </div>
+                            
+                          </div>
+                          
+                        
+                        
+                      </div>
+                         <!-- right side content -->
+                      <div class="col-md-9 p-2">
+                        <div class="card-body">
+                          <a href="/{{book.id}}" class="card-title card-link text-dark mt-0">{{ book_objects.name }}</a>
+                          <p class="card-subtitle  mb-3 text-muted" style="font-weight: 200;"> By {{ book_objects.author }}</p>
+                          <p class="card-text text-justify" >{{ book_objects.description|linebreaksbr }}</small></p>
+                        </div>
+                      </div>
+                      
+                    </div>
+                   
+                 
                 </div>
             </div>
-            <div class="col-md-7">
-                <div class="mt-2">
-                    <div class="col-md-12" >
-                        <h1 class="text-reset"> 
-                            {{ book_objects.name }}
-                        </h1>
-                    </div> 
-                </div>
-                <div class="mt-2">
-                    <div class="col-md-12 text-secondary">
-                    By {{ book_objects.author }}
-                    </div> 
-                </div>
-                <div class="mt-4">
-                    <div class="col-md-12 text-justify">
-                    {{ book_objects.description|linebreaksbr }}
-                    </div> 
-                </div>
-            </div>
-
+           
         </div>
+        
+
+
 </main>
     
 

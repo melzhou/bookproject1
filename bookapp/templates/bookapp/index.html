@@ -41,6 +41,7 @@
     <!-- Scroll magic-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mel Zhou</title>
 </head>
 
@@ -53,12 +54,12 @@
                 <!--mask -->    
                 <div class="mask rgba-grey-light align-items-center" style="height: 100%;"> 
                     <!--content-->
-                        <div class="row h-100 ">
-                            <div class="my-auto text-center">
+                        <div class="row h-100">
+                            <div class="my-auto text-center p-4">
                                 <div class="d-flex justify-content-center">
-                                    <h1 class="display-3 text-reset m-4" style="line-height:60px;">
+                                    <p>
                                         In the insatiable hunger for mystification and understanding, conflict and resolution, challenge and adaptation, explodes the wonder of everything that is human.
-                                    </h1>
+                                    </p>
                                 </div>
                             </div>
                         </div>  
@@ -98,7 +99,7 @@
     }
 </style>
 
-    <div id="trigger1" class="container" style="height: 600px; background-color: transparent;">
+    <div id="trigger1" class="container" style="height: 700; background-color: transparent;">
        
         <div class="d-flex h-100 justify-content-around">
             <div class="col-md-12 my-auto">
@@ -144,7 +145,7 @@
         // build scene
         new ScrollMagic.Scene({
                             triggerElement: "#trigger1",
-                            triggerHook: 0.9, // show, when scrolled 10% into view
+                            triggerHook: 0.80, // show, when scrolled 10% into view
                             duration: "80%", // hide 10% before exiting view (80% + 10% from bottom)
                             offset: 50 // move trigger to center of element
                         })
