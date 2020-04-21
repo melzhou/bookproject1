@@ -31,9 +31,9 @@
     font-weight: 200 !important;
     color:black !important ;
     overflow: hidden;
-    height: 9em; /* exactly 2 lines */
+    height: 17.5em; /* exactly 2 lines */
     text-overflow: -o-ellipsis-lastline;
-    display: -webkit-box;
+   
 }
 
 .nav-item{
@@ -54,8 +54,8 @@ h2{
 }
 
 h5 {
-    font-weight: lighter;
-    font-family: Roboto, sans-serif;
+    font-size: 17px !important;
+    font-weight: 200 !important;
 }
 
 
@@ -96,7 +96,7 @@ body,
 }
 @media (max-width: 767px) {
     .view {
-        overflow: visible;
+        
         margin-top: -160px;
         font-size: 25px !important;
     }
@@ -138,6 +138,16 @@ body,
     border:none;
     box-shadow: none!important;
 }
+
+.top-nav-collapse {
+    background-color:white !important;
+  }
+
+.navbar.collapsing,
+.navbar.show {
+    background:white !important;
+}
+
 
 
 .parallax-curtain{
