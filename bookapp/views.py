@@ -5,7 +5,7 @@ from .models import writing
 # Create your views here.
 
 def bookshelf(request):
-    book_objects = book.objects.all()
+    book_objects = book.objects.all().order_by('-created')
     return render(request,'bookapp/bookshelf.html',{'book_objects':book_objects})
 
 def detail(request,id):
@@ -19,7 +19,7 @@ def about(request):
     return render(request, 'bookapp/about.html')
 
 def article(request):  #model name and view name shouldn't be the same
-    writing_objects = writing.objects.all()
+    writing_objects = writing.objects.all().order_by('-created')
     return render(request, 'bookapp/article.html',{'writing_objects':writing_objects})
 
 def index(request):

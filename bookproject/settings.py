@@ -28,6 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["melsbookapp.herokuapp.com"]
 
+SITE_ID = 1
 
 # Application definition
 
