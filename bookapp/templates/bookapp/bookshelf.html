@@ -74,7 +74,6 @@
             <!--mask -->
                 <div class="mask rgba-white-light align-items-center"> 
                     <!--content-->
-                    
                         <div class="row h-100 mt-4">
                             <div class="my-auto text-center ">
                                 <div class="d-flex justify-content-center">
@@ -113,16 +112,15 @@
                               </div>
                             
                           </div>
-                          
-                        
                         
                       </div>
                          <!-- right side content -->
-                      <div class="col-md-9">
+                      <div class="col-md-8 ">
                         <div class="card-body">
                           <a href="/{{book.id}}" target="_blank" class="card-title stretched-link text-dark mt-0">{{ book.name }}</a>
                           <p class="card-subtitle  mb-3 text-muted" style="font-weight: 200;"> By {{ book.author }}</p>
-                          <p class="card-text text-justify">{{ book.description }}</p>
+                          <p class="card-text text-justify">{{ book.description|linebreaksbr }}</p>
+                          <h6> ... See More</h6>
                          
                         </div>
                       </div>

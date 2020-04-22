@@ -31,8 +31,8 @@
     font-weight: 200 !important;
     color:black !important ;
     overflow: hidden;
-    height: 17.5em; /* exactly 2 lines */
-    text-overflow: -o-ellipsis-lastline;
+    height: 9em; 
+    text-overflow: ellipsis !important;
    
 }
 
@@ -58,7 +58,12 @@ h5 {
     font-weight: 200 !important;
 }
 
-
+/*see more*/
+h6{
+    font-size: 15px !important;
+    font-weight: 200 !important;
+  
+}
 u{
     text-decoration: none;
     border-bottom: 1px solid currentColor;
@@ -96,7 +101,7 @@ body,
 }
 @media (max-width: 767px) {
     .view {
-        
+        overflow: visible;
         margin-top: -160px;
         font-size: 25px !important;
     }
@@ -147,8 +152,6 @@ body,
 .navbar.show {
     background:white !important;
 }
-
-
 
 .parallax-curtain{
     background:none;
