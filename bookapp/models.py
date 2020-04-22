@@ -9,7 +9,6 @@ class book(models.Model):
     description = models.TextField(null=True, blank=True)
     image = models.CharField(max_length = 200)
 
-
 class writing(models.Model):
     name = models.CharField(max_length = 100)
     quote = models.TextField(null=True, blank=True)
